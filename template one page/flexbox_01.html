@@ -1,0 +1,290 @@
+<!--comenzamos creando la estrucura basica
+de un documento html escribiendo <html y 
+teclenado enter para autocompletar, lo que creara
+la estructura que se llenara como se menciona a continuación...-->
+
+<!--indica el tipo de docuemnto-->
+<!DOCTYPE html> 
+<!--dentro de l etiqueta html esta todo el contenido del documento html-->
+<html> 
+<!------------encabezado de pagina----------->
+<!--dentro de la etiqueta head esta el encabezado del documento html-->
+<head> 
+	<title>Festival Noema</title> <!--dentro de la etiqueta tittle esta el titulo de la página-->
+	<link rel='stylesheet' href='estilos.css'/> <!--dentro de esta etiqueta esta la referencia a la hoja de estilos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--viewport para trabajar responsive design-->
+</head>
+
+<!------------body de pagina----------->  
+<!--dentro de la estiqueta body tipicamente esta todo lo que contendra página-->
+<body> 
+
+
+	<!--dentro de la estiqueta header esta todo lo que sera el encanbezado de la página, pudiendo colocarse dentro del body o antes del body-->
+	<header class='menu-container' id="inicio">
+
+      <div class='identificador'>
+        <!----modificar nombre y ruta de la imagen para cambiar el logo por el propio----->
+       <img src="imagenes/LOUVRE LOGO 3.png"> <img src="imagenes/Musse.png"> <img src="imagenes/NOEMA LOGO 3.png">
+      </div>
+
+      <div class='ligas-secciones'>
+      	<!----modificar nombre de la seccion acorde a la necesidad----->
+          <a href="#secc1">Museo</a>
+          <a href="#secc2">Festival</a>
+          <a href="#secc3">Contenido</a>
+          <a href="#secc4">LineUp</a>
+        </div>
+
+    </header>
+
+ 
+
+
+	<!--contenedor que agrupa todos los contenedores que tienen los contenidos de cada sección que aprecen entre el encabezado y pie de pagina-->
+    <main class="secciones">
+    	
+    	<div class='seccion-contenedor' id="secc1">
+
+
+
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		       	        		<img src="imagenes/louvre.png" title="Img 1b"> 
+		       	  <h1>Museo</h1>
+
+<!--contenedor para contenidos de cada sección-->
+    	<div class="contenedor">
+    <div class="texto">
+        <h2></h2>
+        <p>Louvre, museo nacional y galería de arte de Francia, ubicado en parte de un gran palacio en París que fue construido en el sitio de la fortaleza del siglo XII de Felipe Augusto. Es el museo de arte más visitado del mundo, con una colección que abarca obras de civilizaciones antiguas hasta mediados del siglo XIX. La principal atracción para los visitantes es la Mona Lisa de Leonardo da Vinci (c. 1503–19), así como la Venus de Milo (150–125 a. C.) y la Victoria Alada de Samotracia (200–175 a. C.).</p>
+    </div>
+
+          <a href="visor 360.html">
+          <div class="contenedor-imagen">
+            <img src="imagenes/visor.png" title="visor360" alt="Imagen descriptiva">
+        </a>
+
+    		</div>
+    
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc2">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Festival</h1>
+		       		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img src="imagenes/NOEMA LOGO 1.png" title="noema1" alt="Imagen descriptiva">
+        		<br>
+        		<br>
+        		<br>
+        		<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p1>Un espacio para quienes no temen pensar</p1>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Festival Noema es una invitación a romper inercias, a dialogar sin filtros y a encender la chispa de una nueva conciencia colectiva.
+		        A las afueras del icónico Museo del Louvre, en el corazón vivo de París, surge Festival Noema, un espacio dedicado al pensamiento crítico, la literatura disruptiva y el análisis profundo de los sistemas que moldean nuestra realidad. Noema es más que un festival: es un llamado a despertar, cuestionar y reconstruir la forma en que entendemos el mundo.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+
+    		</div>
+    
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc3">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>Contenido</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p4>Autores</p4>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p5>En esta edición, reunimos a voces que han desafiado narrativas establecidas y han propuesto nuevas formas de ver, interpretar y actuar sobre nuestro entorno. Entre las personalidades invitadas destacan autores como Jorge Guerra, Antony Sutton (Antony Cyril Sutton) y Guillermo Mas Arellano, cuyas obras han marcado debates globales sobre política, economía, ideología y libertad individual.</p5>
+		        <br><!--etiqueta para un brinco de renglón-->
+
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<a href="https://youtu.be/7V9i-jW5hN8">
+    		<div class="contenedor-imagen">
+        		<img  src="imagenes/autores.png">
+        		</a>
+
+
+            <p4>Libros</p4>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p3>Literatura que incomoda, revela y transforma.</p3>
+		         <br>
+		        <p5>El festival celebra textos que han sacudido conciencias y advertido sobre los riesgos de la manipulación, el poder absoluto y el control social. Entre ellos: 
+		        	- 1984, de George Orwell: una brutal radiografía del totalitarismo moderno. 
+		        	- Un Mundo Feliz, de Aldous Huxley: una distopía que reflexiona sobre la felicidad artificial y la pérdida de humanidad.
+		        	- The Rape of the Mind: The Psychology of Thought Control, de Joost Meerloo: un análisis profundo sobre técnicas de propaganda y coerción mental.
+		        	- Confesiones de un Sicario Económico, de John Perkins: una mirada directa al engranaje económico que ha moldeado gobiernos y sociedades.
+		        	Estas obras serán exploradas en mesas de diálogo, lecturas guiadas y análisis contemporáneos.</p5>
+		        <br><!--etiqueta para un brinco de renglón-->
+
+    		<div class="contenedor-columnas"> 
+
+    			<a href="https://youtu.be/Fb4JzXujldQ">
+    			<div class="columna">				 
+        		<img  src="imagenes/MUNDO FELIZ.png" title="Img5"> 
+           </a>
+         </div>
+
+    			<a href="https://youtu.be/-rw0P3N_bPc">
+    			<div class="columna">				 
+        		<img  src="imagenes/MIND.png" title="Img5"> 
+           </a>
+         </div>
+
+    			<a href="https://youtu.be/3RyAA5Utywk">
+    			<div class="columna">				 
+        		<img  src="imagenes/1984.png" title="Img5"> 
+           </a>
+         </div>
+
+    			<a href="https://youtu.be/JX26O-nb8Y4">
+    			<div class="columna">				 
+        		<img  src="imagenes/SICARIO.png" title="Img5"> 
+           </a>
+
+					</div>
+					</div>
+
+
+    		</div> <p4>Cine</p4>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p3>Audiovisuales que revelan narrativas ocultas</p3>
+		        <br>
+		        <p5>El programa incluye proyecciones especiales que amplían la conversación hacia lo visual:
+		        	- Land of the Blind (2006): una sátira política sobre poder, revolución y manipulación.
+		        	- Zeitgeist: documental que cuestiona mitos culturales, sistemas económicos y estructuras de control.
+		        	- The Money Masters: una investigación sobre la historia del sistema bancario y el poder financiero global.
+		        	Cada material se presentará acompañado de foros abiertos, donde expertos y asistentes compartirán perspectivas y reflexiones.</p5>
+
+		        	<div class="contenedor-columnas2"> 
+
+    			<a href="https://youtu.be/bawKL1mYPto">
+    			<div class="columna">				 
+        		<img  src="imagenes/LAND.png" title="Img5"> 
+           </a>
+         </div>
+
+    			<a href="https://youtu.be/CD9C2hwC3OE">
+    			<div class="columna">				 
+        		<img  src="imagenes/ZEIGEIST.png" title="Img5"> 
+           </a>
+         </div>
+
+    			<a href="https://youtu.be/zOxIhoZOM84">
+    			<div class="columna">				 
+        		<img  src="imagenes/MONEY.png" title="Img5"> 
+           </a>
+         </div>
+
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+
+    		<p4>Invitado Especial</p4>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p3>Ponencia Magistral de Pavel Durov</p3>
+		        <br>
+		        <p5>Este año, contamos con la destacada participación de Pavel Durov, figura clave en la defensa de la privacidad digital y la libertad de expresión. Su ponencia aborda el impacto de las tecnologías modernas, la vigilancia, la independencia informativa y los nuevos retos de la comunicación global.</p5>
+		        <br><!--etiqueta para un brinco de renglón-->
+
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<a href="https://youtu.be/cBBKyZgZx5c">
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenes/durov.png">
+        		</a>
+
+    		</div>
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc4">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>LineUp</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Lugar: Explanada del Louvre, París (varios espacios: Main Hall, Screening Room, Forum, Workshop Room, Terrace
+		        	Fechas: 13–15 de febrero de 2026
+		        Horarios mostrados en CET (Hora de París) (Equivalente aproximado: America/Matamoros = CET −7 horas</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		      </div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen-secc4">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        	
+        		<img  src="imagenes/dia 1.png" title="Img 1">
+
+        		<img  src="imagenes/dia 2.png" title="Img 2">
+
+        		<img  src="imagenes/dia 3.png" title="Img 3">
+
+      <div class="texto-secc">
+        	<p>Domingo — Entrada Libre • No Cover
+		        El domingo 15 de febrero de 2026, el Festival NOEMA abre sus puertas totalmente gratis para que cualquier visitante pueda disfrutar de las actividades finales del encuentro.
+		      Horario: 09:00 — 20:30</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+    		
+
+    	</div>
+
+    </main>
+
+    <!------------pie de pagina----------->
+    <!--dentro de la etiqueta footer esta todo lo que sera el pie de página, pudiendo colocarse dentro del body o despues del body-->
+	<footer>
+	   
+	    <div class='footer-item'>
+	      <!----modificar el href para que dirija una pagina especifica de facebook----->
+	      <a href="https://www.facebook.com/">
+	      	<img src="imagenes/fbk.png" title="Facebook">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de twitter----->
+	      <a href="https://twitter.com/">
+	      	<img src="imagenes/twt.png" title="Twitter">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de instagram----->
+	      <a href="http://instagram.com/">
+	      	<img src="imagenes/inst.png" title="Instagram">
+	      </a>
+	    </div>
+
+	    <div class="copyright">
+	    	<!----modificarlo con datos o mensaje propio----->
+	      <p style="">2025 LOUVRE</p>
+	    </div>
+	    
+	  </footer>
+	<!------------------------------------>
+
+	<!---------enlace que regresa al inicio de la pagina--------->
+	<!--dentro de la etiqueta "a" de tipo enlace esta la imagen que actua como icono que regresa al inicio de la página-->
+	    <a class="ir-arriba" title="Volver arriba" href="#inicio">
+	    	<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	      	<img src="imagenes/logo.png">
+	    </a>
+
+</body>
+
+</html>
