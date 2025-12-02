@@ -1,0 +1,403 @@
+/********************************/
+/*estilos generales de la página*/
+/********************************/
+* { /*reseteo todos los elementos para que por default tengan 
+	un margen 0 y padding 0 y un modelo de caja tipo border-box*/
+   margin: 0;
+   padding: 0;
+   box-sizing:content-box;
+   font-family: 'Open Sans', bree-serif;/*especifico el nombre y familia de la tipografia a usar*/
+}
+html {
+  scroll-behavior: smooth; /*para desplazarse "scrolear" suavemente dentro de la página al presionar un enlace*/
+}
+/***************************************************/
+
+
+/**********************************/
+/*estilos para header de la página*/
+/**********************************/
+header {/*caracteristicas elementos dentro del header de la pagina*/
+	font-size: 40px; /*tamaño de las fuentes que aprecen en el header*/
+  	background-color: #fff1d2;  /*color fondo encabezado*/
+    height: 160px;  /* altura del encabezado, equivale a 5.5em*/
+    padding-left: 10%; /*hago un espacio a la izquierda al interior del contenedor header de 10% del ancho del viewport*/
+    padding-right: 10%; /*hago un espacio a la derecha al interior del contenedor header de 10% del ancho del viewport*/
+  	box-shadow: 0px 1px 8px grey; /*efecto de material con sombreado sobre el fondo*/
+    transition: 100ms; /*para la transicion con media queries diseño responsivo*/
+}
+@media screen and (max-width: 700px) {
+header {
+	height: 260px;  /* altura del encabezado, equivale a 5.5em*/
+	}
+}
+.menu-container {/*caracteristicas elementos en contenedor con la clase menu-container*/
+  	display: flex; /*tipo de layout felxbox*/
+  	flex-direction: column; /*rederizara/dibujara los items/elementos hijos en el layout 
+  	como una columna, un contenedor o un item sobre el otro */
+}
+        /* Contenedor flexible para alinear imágenes horizontalmente */
+        .logo-container {
+            display: flex;              /* Coloca elementos en fila */
+            justify-content: center;    /* Centra horizontalmente */
+            align-items: center;        /* Centra verticalmente */
+            gap: 20px;                   /* Espacio entre logos */
+            flex-wrap: wrap;            /* Permite que bajen en pantallas pequeñas */
+            padding: 20px;
+        }
+
+        /* Ajuste de tamaño de los logos */
+        .logo-container img {
+            max-width: 150px;  /* Tamaño máximo */
+            height: auto;      /* Mantiene proporción */
+}
+.identificador {/*caracteristicas elementos en contenedor con la clase identificador*/
+  	/*border: 5px solid #222;  /* For debugging */
+  	width: 100%; /*ancho que tendra el contenedor con clase menu*/
+  	display: flex; /*sera un elemento/item de tipo flex*/
+  	justify-content:space-between; /*defino la alineación horizontal de los items hijos al centro*/
+}
+.identificador img{/*caracteristicas imagen identificadora dentro del contenedor con clase identificador*/
+	margin-top: 0px; /*un margen arriba de 15 px*/
+    height: 160px; /*ancho que tendra la imagen identificadora*/
+}
+.identificador img{/*caracteristicas imagen identificadora dentro del contenedor con clase identificador*/
+	margin-top: 0px; /*un margen arriba de 15 px*/
+    height: 100px; /*ancho que tendra la imagen identificadora*/
+}
+.ligas-secciones{/*caracteristicas elementos en contenedor con la clase secciones*/
+	/*border: 5px solid #555;  /* For debugging */
+	width: 100%; /*ancho que tendra el contenedor con clase menu*/
+	display: flex; /*sera un elemento/item de tipo flex*/
+	justify-content: space-between; /*defino la alineación horizontal de los items hijos diciendo
+	cuando hay mas de uno distribuya el esapcio restante entre los espacios de cada elemento/item*/
+}
+.ligas-secciones a{/*caracteristicas elementos tipo enlace dentro del contenedor con clase secciones*/
+	color: #94d0fb; /*color que tendran las fuentes de los enlaces*/
+	text-decoration: none; /*le quito decoraciones a los enlaces, saeln sin subrayar ahora*/
+  	font-weight: bold; /*tipo de letra bold*/
+ 	margin-top: 10px;
+ 	transition: 50ms; /*para la transicion con media queries diseño responsivo*/
+}
+.ligas-secciones a:hover{
+  transform: scale(1.03);
+  transition: 50ms;
+}
+/**media query cuando ancho es menor o igual a 700px**/
+@media screen and (max-width: 700px) {
+  .ligas-secciones {
+    flex-direction: column;
+    text-align: center;
+    }
+ }
+/***************************************************/
+
+
+
+
+
+
+
+/********************************/
+/*estilos para body de la página*/
+/********************************/
+.secciones {/*caracteristicas elementos en contenedor con la clase menu-container*/
+  	display: flex; /*tipo de layout felxbox*/
+  	flex-direction: column; /*rederizara/dibujara los items/elementos hijos en el layout 
+  	como una columna, un contenedor o un item sobre el otro */
+  	padding-left: 5%; /*hago un espacio a la izquierda al interior del contenedor header de 10% del ancho del viewport*/
+    padding-right: 5%; /*hago un espacio a la derecha al interior del contenedor header de 10% del ancho del viewport*/
+}
+.texto-secc {
+	display: flex; /*sera un elemento/item de tipo flex*/
+	flex-direction: column; /*rederizara/dibujara los items/elementos hijos en el layout 
+  	como una columna, un contenedor o un item sobre el otro */
+}
+.texto-secc h1{
+	display: flex; /*sera un elemento/item de tipo flex*/
+	justify-content: center; /*defino la alineación horizontal de los items hijos al centro*/
+	margin-top: 25px;
+	background-color: #bcd6e9;
+	color: #f5bb12;
+	font-size: 40pt;
+}
+.texto-secc p{
+	font-size: 30pt;
+	display: flex; /*sera un elemento/item de tipo flex*/
+	margin-top: 10px;
+	font-style: DM Sans;
+
+}
+.visor360 {
+    width: 100px;   /* Cambia el tamaño */
+    height: auto;   /* Mantiene proporción */ 
+}
+.par-imgs-mobile{/*caracteristicas elementos en contenedor con la clase secciones*/
+	display: none;
+}
+.img3{
+	display: none;
+}
+.par-imgs-mobile p{
+	display: none;
+}
+/**media query cuando ancho es menor o igual a 700px**/
+@media screen and (max-width: 700px) {
+	.texto-secc p{
+		font-size: 14pt;
+	}
+	.par-imgs-escritorio{/*caracteristicas elementos en contenedor con la clase secciones*/
+		display: none;
+	}
+	.par-imgs-escritorio img{
+		display: none;
+	}
+	.par-imgs-escritorio img:hover{
+	 	display: none;
+	}
+	.par-imgs-escritorio p{
+		display: none;
+	}
+	.par-imgs-mobile{/*caracteristicas elementos en contenedor con la clase secciones*/
+		/*border: 5px solid #555;  /* For debugging */
+		width: 100%; /*ancho que tendra el contenedor con clase menu*/
+  		display: flex; /*sera un elemento/item de tipo flex*/
+  		flex-direction: column;
+  		align-items: center; 
+	}
+	.par-imgs-mobile img{
+		width: 100%;
+		transition: 200ms;
+		display: flex; /*sera un elemento/item de tipo flex*/
+	}
+	.par-imgs-mobile img:hover{
+	 	transform: scale(1.03);
+  		transition: 200ms;
+	}
+	.par-imgs-mobile p{
+		width: 100%;
+		font-size: 12pt;
+		font-style: italic;
+		text-align: center;
+		display: flex; /*sera un elemento/item de tipo flex*/
+	}
+ }
+	.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .contenedor-imagen p4{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 30pt;
+	font-style: normal;
+  font-weight: bold;
+	display: flex; /*sera un elemento/item de tipo flex*/
+	justify-content: center;
+ }
+.contenedor-columnas {
+	  margin-top: 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: #8e0404;
+    box-sizing: content-box;
+}
+  .texto-secc p4{
+  	margin-top: 20px;
+  	display: flex;
+  	flex-direction: column;
+		font-size: 30pt;
+		font-weight: bold;
+		text-align: center;
+		}
+  .texto-secc p3{
+  	display: flex;
+  	flex-direction: column;
+		font-size: 30pt;
+		text-align: center;
+}
+	.texto-secc p5{
+		display: flex;
+		font-size: 25pt;
+		text-align: center;
+}
+ 
+.columna img {
+margin-top: 20px; /*un margen arriba de 15 px*/
+    height: auto; /*ancho que tendra la imagen identificadora*/
+}
+	.contenedor-imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: content-box;
+}
+  .contenedor-imagen img{
+    display: flex;
+    flex-direction: column;
+     max-width: 100%; /* Nunca excede el ancho del contenedor */
+        height: auto;    /* Mantiene la proporción */
+        display: block;  /* Evita espacios en línea */
+}
+. {
+    width: 100px;   /* Cambia el tamaño */
+    height: 100px;   /* Mantiene proporción */ 
+    align-content: center;
+}    
+    .contenedor-columnas2 {
+    margin-top: 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: #8e0404;
+    box-sizing: content-box;
+}    
+.texto {
+    width: 70%;
+    font-size: 20pt;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Open Sans', bree-serif;
+
+}
+.contenedor-imagen p1{
+	text-align: center;
+	font-size: 30pt;
+	font-style: normal;
+  font-weight: bold;
+	display: flex; /*sera un elemento/item de tipo flex*/
+	justify-content: center;
+}
+.contenedor-imagen p{
+	text-align:center;
+	font-size: 30pt;
+	font-style:normal;
+	display: flex; /*sera un elemento/item de tipo flex*/
+}
+/**media query cuando ancho es menor o igual a 700px**/
+@media screen and (max-width: 700px){
+	.contenedor-imagen img{
+		width: 50%;
+		transition: 200ms;
+	}
+}
+.contenedor-imagen-secc4{
+	display: flex; /*sera un elemento/item de tipo flex*/
+  	flex-direction: column;
+  	align-items: center;
+}
+.contenedor-imagen-secc4 p{
+	width: 50;
+	text-align: center;
+	font-style: italic;
+	font-size: 25pt;
+	display: flex; /*sera un elemento/item de tipo flex*/
+}
+.contenedor-imagen-secc4 img{
+	display: flex; /*sera un elemento/item de tipo flex*/
+	flex-direction: column;
+	width: 80%;
+	transition: 200ms;
+}
+.contenedor-imagen-secc4 img:hover{
+  transform: scale(1.03);
+  transition: 200ms;
+}
+/**media query cuando ancho es menor o igual a 700px**/
+@media screen and (max-width: 700px){
+	.contenedor-imagen-secc4 p{
+		width: 100%;
+		font-size: 25pt;
+	}
+	.contenedor-imagen-secc4 img{
+		display: flex; /*sera un elemento/item de tipo flex*/
+		width: 100%;
+		transition: 200ms;
+	}
+}
+/***************************************************/
+
+
+
+
+
+
+/**********************************/
+/*estilos para footer de la página*/
+/**********************************/
+footer {
+  	background-color: white;/*color fondo pie de pagina*/
+  	margin-top: 40px;
+  	box-shadow: 0px 1px 8px grey;
+  	display: flex; /*sera un elemento/item de tipo flex*/
+  	flex-direction: column;
+  	align-items: center; 
+}
+.footer-item{
+	margin-top: 47px;
+	width: 100%;
+  	display: flex; /*sera un elemento/item de tipo flex*/
+  	justify-content: center; /*defino la alineación horizontal de los items hijos al centro*/
+}
+.footer-item img{
+	height: 60px;
+	margin-right: 35px;
+}
+.copyright{
+	font-size: 17pt;
+	text-align: center;
+	margin-top: 49px;
+	margin-bottom: 95px;
+}
+/**media query cuando ancho es menor o igual a 700px**/
+@media screen and (max-width: 700px){
+	.footer-item{
+  		flex-direction: column;
+  		align-items: center; 
+	}
+	.footer-item img{
+		height: 50px;
+		margin-top: 35px;
+		margin-right: 0px;
+	}
+	.copyright{
+		font-size: 12pt;
+	}
+}
+/***************************************************/
+
+
+
+
+
+/*********************************/
+/*estilos para icono hacia arriba*/
+/*********************************/
+.ir-arriba {
+  	display: flex; /*sera un elemento/item de tipo flex*/
+  	flex-direction: column;
+  	align-items: center; 
+}
+.ir-arriba img{
+  	height: 60px;
+  	padding-right: 30px;
+  	text-decoration: none;
+  	cursor:pointer;
+  	position:fixed;
+ 	bottom:20px;
+}
+/**media query cuando ancho es menor o igual a 700px**/
+@media screen and (max-width: 700px){
+	.ir-arriba img{
+		height: 50px;
+  		padding-right: 0px;
+	}
+}
+.ir-arriba img:hover{
+	transform: scale(1.1);
+  	transition: 100ms;
+}
+/***************************************************/
