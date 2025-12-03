@@ -222,8 +222,8 @@ header {
 		display: flex;
 		font-size: 25pt;
 		text-align: center;
-		
 }
+ 
 .columna img {
 margin-top: 20px; /*un margen arriba de 15 px*/
     height: auto; /*ancho que tendra la imagen identificadora*/
@@ -400,7 +400,4 @@ footer {
 	transform: scale(1.1);
   	transition: 100ms;
 }
-
 /***************************************************/
-
-
