@@ -221,7 +221,7 @@ header {
 	.texto-secc p5{
 		display: flex;
 		font-size: 25pt;
-		text-align: center;
+		text-align: justify;
 }
  
 .columna img {
