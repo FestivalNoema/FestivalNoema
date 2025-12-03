@@ -223,12 +223,6 @@ header {
 		font-size: 25pt;
 		text-align: center;
 }
-	.texto-secc p7{
-		display: flex;
-		font-size: 25pt;
-		text-align: left;
-}
- 
 .columna img {
 margin-top: 20px; /*un margen arriba de 15 px*/
     height: auto; /*ancho que tendra la imagen identificadora*/
@@ -407,3 +401,4 @@ footer {
 }
 
 /***************************************************/
+
